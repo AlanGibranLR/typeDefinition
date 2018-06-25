@@ -1,0 +1,35 @@
+
+import UIKit
+
+
+//TYPE DEFINITION
+
+
+//Dentro de la estructura Person hay dos funciones (métodos) y dos variables (propiedades) para nombre.
+struct Person {//Estructura de datos
+    let firstName: String//Propiedad
+    let lastName: String//Propiedad
+    //Ambos (propiedades y métodos), sirven para describir el comportamiento del objeto
+    func sayHello() {//Método
+        print("Hello there! My name is \(firstName) \(lastName).")
+    }
+    func diHola() {//Otro método
+        print("¡Hola!, mi nombre es \(firstName) \(lastName)")
+    }
+}
+//Aquí se iniciliza una variable persona1 de tipo Person y se le introducen los dos valores de nombre.
+let persona1 = Person(firstName: "Candace", lastName: "Salinas")
+let persona2 = Person(firstName: "John", lastName: "Doe")
+/*Se crean dos instancias del tipo Person
+ Una instancia representa una Person llamada Candace Salinas
+ y la otra instancia representa una Persona llamada John Doe. */
+persona2.sayHello()
+persona1.diHola()
+
+var largest: Int
+let a = 12
+let b = 4
+
+largest = a > b ? a : b
+print("The largest number is \(largest)")
+//Se imprime 12
